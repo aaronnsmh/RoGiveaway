@@ -51,7 +51,7 @@ client.on('message', message => {
         }
     })
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
        member.send("Welcome to the server!");
        console.log(`${member.user.username} has joined`);
 });
