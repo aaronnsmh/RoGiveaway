@@ -8,7 +8,9 @@ client.on('ready', () => {
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setPresence({ activity: { name: 'RoGiveaway | !help' }, status: 'online' })
+    client.user.setActivity('over RoGiveaway | !help', { type: 'WATCHING' })
+  .then(presence => console.log(`Activity set to ${presence.game.name}`))
+  .catch(console.error);
 });
 
 client.on('message', message => {
