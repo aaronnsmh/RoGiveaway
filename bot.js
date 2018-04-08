@@ -8,6 +8,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
     console.log('I am ready!');
+    bot.user.setGame('RoGiveaway | !help')
 });
 
 client.on('message', message => {
