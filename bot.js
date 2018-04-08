@@ -8,8 +8,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setGame('RoGiveaway | !help')
-    client.user.setStatus('dnd')
+    client.user.setPresence({ activity: { name: 'RoGiveaway | !help' }, status: 'online' })
 });
 
 client.on('message', message => {
