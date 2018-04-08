@@ -11,7 +11,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', () => {
-    console.log('RoGiveaway is ONLINE.');
+    console.log('RoGiveaway is ONLINE. No bugs found at this time.');
     client.user.setAvatar('https://lh3.googleusercontent.com/Zqr4Fjvv96ViJHj72zhDv36RWxe1myScn-g2Qx6P-2nGMVyp0PVDMK2kKF0DQz_59t2mR8hf6UbzLQ=w1920-h943')
 });
 
