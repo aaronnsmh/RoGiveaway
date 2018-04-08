@@ -8,9 +8,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity('over RoGiveaway | !help', { type: 'WATCHING' })
-  .then(presence => console.log(`Activity set to ${presence.game.name}`))
-  .catch(console.error);
+    client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
