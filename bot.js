@@ -51,7 +51,10 @@ client.on('message', message => {
         }
     })
 
-
+bot.on('guildMemberAdd', member => {
+       member.send("Welcome to the server!");
+       console.log(`${member.user.username} has joined`);
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
