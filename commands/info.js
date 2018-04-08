@@ -1,7 +1,7 @@
 var randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
 exports.run = (Discord, client, message, args) => {
-
+message.channel.reply("check your DMs for infomation of RoGiveaway :white_check_mark:")
 var embedinfo = new Discord.RichEmbed()
         .setFooter("© RoGiveaway Bot | Made by Aaron #1742")
         .setColor(randomColor)
