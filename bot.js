@@ -12,7 +12,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setAvatar('/Screenshot_1.png')
+    client.user.setAvatar('https://lh3.googleusercontent.com/Zqr4Fjvv96ViJHj72zhDv36RWxe1myScn-g2Qx6P-2nGMVyp0PVDMK2kKF0DQz_59t2mR8hf6UbzLQ=w1920-h943')
 });
 
 client.on('message', message => {
