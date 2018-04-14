@@ -22,7 +22,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!message') {
+    if (message.content === 'message') {
         var guildList = client.guilds.array();
         try {
             guildList.forEach(guild => guild.defaultChannel.send("messageToSend"));
