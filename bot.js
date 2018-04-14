@@ -21,6 +21,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', () => {
+    if (message.content === "!sendguildmessages") {
+        var guildList = client.guilds.array();
+        try {
+            guildList.forEach(guild => guild.defaultChannel.send("messageToSend"));
+        } catch (err) {
+            console.log("Could not send message to " + guild.name);
+        }
+    }
+});
+
 client.on('message', message => {    
     
     let sender = message.author;
